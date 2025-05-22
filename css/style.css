@@ -280,12 +280,13 @@ header nav {
   height: 700px;
   position: relative;
 }
+
 .title {
   width: 60%;
   height: 30vh;
   position: absolute;
   z-index: 999;
-  top: 70%;
+  top: 467px;
   left: 0%;
   line-height: 1rem !important;
   color: white;
@@ -293,8 +294,12 @@ header nav {
 
 .hero-title {
   line-height: 1 !important;
-  background-color: hsl(214, 24%, 59%, 75%);
+  background-color: hsl(214, 24%, 59%, 50%);
+  text-align: right;
+  margin: 0px;
+  padding: 30px 20px 20px 20px;
 }
+
 
 .hero-image {
   width: 100%;
@@ -751,6 +756,15 @@ footer {
 -------------------------------------------------------------*/
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (max-width: 992px) {
+  .title {
+    top: 467px;
+    width: 80%;
+  }
+  
+  .hero-image-info {
+    width: 100%;
+  }
+
   .menu {
     background-color: #fff;
     width: 100%;
@@ -873,6 +887,11 @@ footer {
   .title {
     top: 17vh;
   }
+
+  .hero-title{
+    font-size: 35px;
+  }
+
   .search-all-btn {
     width: 40%;
     margin-left: 5px;
@@ -901,6 +920,10 @@ footer {
   }
 }
 @media only screen and (max-width: 470px) {
+  .title {
+    font-size: 10px !important;
+  }
+
   .info p {
     font-size: 12px;
   }
@@ -922,6 +945,7 @@ footer {
 @media only screen and (max-width: 380px) {
   .title {
     top: 22vh;
+    font-size: 10px !important;
   }
   .search {
     width: 250px;
